@@ -3,7 +3,7 @@ import { SeaExploreData } from "../../data/SeaExploreData/data";
 const SeaExplore = () => {
   return (
     <>
-      <div className=" px-8 mt-4">
+      <div className=" px-4 mt-4">
         <h2 className="text-xl font-semibold text-blue-800 mb-3">
           <span className="text-blue-600 font-bold">SeaExplore</span> tour
           recommendations
