@@ -3,8 +3,8 @@ import { SeaMartData } from "../../data/SeaMartData/data";
 const SeaMart = () => {
   return (
     <>
-      <div className=" px-4 mt-[200px] sm:mt-20 md:mt-20">
-        <h2 className="text-xl font-semibold text-blue-800 mb-3">
+      <div className=" md:px-4 mt-[200px] sm:mt-20 md:mt-20">
+        <h2 className="text-xl font-semibold text-blue-800 mb-3 px-4 md:px-0">
           <span className="text-blue-600 font-bold">SeaMart</span> Product
           Recommendations
         </h2>

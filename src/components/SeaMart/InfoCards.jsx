@@ -1,0 +1,32 @@
+import { FaCalendarCheck, FaFish, FaBoxOpen } from "react-icons/fa";
+
+const InfoCards = () => {
+  return (
+    <div className="overflow-x-auto scrollbar-hide px-4 mt-14 p-1">
+      <div className="flex gap-4 w-max justify-center  mx-auto">
+        <div className="bg-white rounded-xl shadow-md p-4 w-48 flex-shrink-0 flex flex-col items-center hover:shadow-lg transition">
+          <FaCalendarCheck className="text-4xl mb-2" />
+          <div className=" flex items-center gap-x-1 flex-wrap text-center mx-auto justify-center">
+            <p className="font-semibold text-center">Catch and Send</p>
+            <p className="text-blue-500 text-sm font-semibold">Schedule</p>
+          </div>
+        </div>
+        <div className="bg-white rounded-xl shadow-md p-4 w-48 flex-shrink-0 flex flex-col items-center hover:shadow-lg transition">
+          <FaFish className="text-4xl mb-2" />
+          <div className=" flex items-center gap-x-1">
+            <p className="text-blue-500 font-semibold">Nearby</p>
+            <p className=" text-sm font-semibold">TPI</p>
+          </div>
+        </div>
+        <div className="bg-white rounded-xl shadow-md p-4 w-48 flex-shrink-0 flex flex-col items-center hover:shadow-lg transition">
+          <FaBoxOpen className="text-4xl mb-2" />
+          <div className=" flex items-center gap-x-1">
+            <p className="font-semibold">SEABOX</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default InfoCards;
