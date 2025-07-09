@@ -6,16 +6,18 @@ import { SeaExploreProduk } from "../../data/SeaExploreProduk/data";
 import Background from "../../assets/elements/bacground.svg";
 import { IoLocationSharp } from "react-icons/io5";
 import { FaAngleLeft } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 export default function SeaExplore() {
   const [search, setSearch] = useState("");
+  const Navigate = useNavigate();
 
   return (
     <div
       className="min-h-screen bg-cover bg-no-repeat bg-center text-white font-sans"
       style={{ backgroundImage: `url(${Background})` }}
     >
-      <div className="bg-[#0179C3] px-4 py-4 rounded-b-3xl flex justify-start items-center">
+      <div onClick={() => Navigate("/")} className="bg-[#0179C3] px-4 py-4 rounded-b-3xl flex justify-start items-center">
         <FaAngleLeft className="text-2  xl" />
         <h1 className="text-xl font-bold">SeaExplore</h1>
       </div>

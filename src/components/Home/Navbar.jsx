@@ -4,8 +4,10 @@ import { GiScubaMask } from "react-icons/gi";
 import { FaUsers } from "react-icons/fa";
 import { FaPlane } from "react-icons/fa";           
 import { FaAngleDoubleRight } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <div className="relative w-full bg-white">
       <div className="bg-gradient-to-r from-blue-500 to-blue-400 h-[160px] w-full rounded-b-4xl md:rounded-b-full">
@@ -22,7 +24,7 @@ const Navbar = () => {
       <div className=" absolute px-4 left-0 right-0 top-28">
         <div className="bg-gradient-to-r from-sky-200 to-cyan-400 rounded-2xl p-3 md:p-4 shadow-md w-full md:max-w-[700px] mx-auto">
           <div className="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-3 md:gap-x-16 justify-center">
-            <div className="flex flex-col items-center">
+            <div onClick={() => navigate("/seamart")} className="flex flex-col items-center">
               <div className="bg-[#145184] text-white rounded-full w-16 h-16 flex items-center justify-center">
                 <FiShoppingCart className="text-3xl" />
               </div>
@@ -30,7 +32,7 @@ const Navbar = () => {
                 SeaMart
               </span>
             </div>
-            <div className="flex flex-col items-center">
+            <div onClick={() => navigate("/seacraft")} className="flex flex-col items-center">
               <div className="bg-[#145184] text-white rounded-full w-16 h-16 flex items-center justify-center">
                 <GiScubaMask className="text-3xl" />
               </div>
@@ -46,7 +48,7 @@ const Navbar = () => {
                 SeaTalk
               </span>
             </div>
-            <div className="flex flex-col items-center">
+            <div onClick={() => navigate("/seaexplore")} className="flex flex-col items-center">
               <div className="bg-[#145184] text-white rounded-full w-16 h-16 flex items-center justify-center">
                 <FaPlane className="text-3xl" />
               </div>

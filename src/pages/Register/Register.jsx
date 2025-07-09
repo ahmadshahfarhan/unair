@@ -1,6 +1,8 @@
 import { FcGoogle } from "react-icons/fc";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[#58aafc] via-[#368fde] to-[#1e64ac]">
@@ -14,7 +16,13 @@ const Register = () => {
           <h3 className=" text-md text-[#b1e5ff] font-semibold">
             Let's create your account
           </h3>
-          <div className=" flex flex-col gap-4 mt-2">
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              navigate("/login");
+            }}
+            className=" flex flex-col gap-4 mt-2"
+          >
             <input
               placeholder="Username, Email or Phone Number"
               className=" border-b-2 border-[#b1e5ff] outline-none py-2 text-[#b1e5ff]"
@@ -73,11 +81,14 @@ const Register = () => {
             </div>
             <div className=" flex items-center justify-center text-center gap-x-1">
               <h1 className=" text-white">Already signed up?</h1>
-              <button className=" text-white font-semibold cursor-pointer">
+              <button
+                onClick={() => navigate("/login")}
+                className=" text-white font-semibold cursor-pointer"
+              >
                 Log In
               </button>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </>

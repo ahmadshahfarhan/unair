@@ -2,14 +2,21 @@ import { CiSearch } from "react-icons/ci";
 import { FaAngleLeft } from "react-icons/fa6";
 import Element1 from "../../assets/elements/12.svg";
 import Element2 from "../../assets/elements/13.svg";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const Navigate = useNavigate();
   return (
     <div className="relative w-full bg-white">
       <div className="bg-gradient-to-r from-blue-500 to-blue-400 h-[200px] lg:h-[160px] w-full rounded-b-4xl md:rounded-b-full">
-        <div className=" flex items-center ml-4 pt-3">
+        <div
+          onClick={() => Navigate("/")}
+          className=" flex items-center ml-4 pt-3"
+        >
           <FaAngleLeft className="text-white text-xl md:text-3xl cursor-pointer" />
-          <span className=" text-xl md:text-3xl font-semibold text-white">SeaMart</span>
+          <span className=" text-xl md:text-3xl font-semibold text-white">
+            SeaMart
+          </span>
         </div>
         <img
           className=" absolute right-3 md:right-24 w-[220px] top-0"

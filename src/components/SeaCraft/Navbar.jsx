@@ -6,12 +6,14 @@ import Element3 from "../../assets/elements/3.svg";
 import Element4 from "../../assets/elements/4.svg";
 import Element5 from "../../assets/elements/5.svg";
 import Full from "../../assets/elements/full.svg";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const Navigate = useNavigate();
   return (
     <div className="relative w-full bg-white">
       <div className="bg-gradient-to-r from-blue-500 to-blue-400 h-[200px] lg:h-[160px] w-full rounded-b-4xl md:rounded-b-full">
-        <div className=" flex items-center ml-4 pt-3">
+        <div onClick={() => Navigate("/")} className=" flex items-center ml-4 pt-3">
           <FaAngleLeft className="text-white text-xl md:text-3xl cursor-pointer" />
           <span className=" text-xl md:text-3xl font-semibold text-white">
             SeaCraft
