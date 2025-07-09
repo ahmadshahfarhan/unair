@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <div className="relative w-full bg-white">
       <div className="bg-gradient-to-r from-blue-500 to-blue-400 h-[200px] lg:h-[160px] w-full rounded-b-4xl md:rounded-b-full">
-        <div onClick={() => Navigate("/")} className=" flex items-center ml-4 pt-3">
+        <div onClick={() => Navigate("/Home")} className=" flex items-center ml-4 pt-3">
           <FaAngleLeft className="text-white text-xl md:text-3xl cursor-pointer" />
           <span className=" text-xl md:text-3xl font-semibold text-white">
             SeaCraft

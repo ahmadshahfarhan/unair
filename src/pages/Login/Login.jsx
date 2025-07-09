@@ -22,9 +22,8 @@ const Login = () => {
           <form
             onSubmit={(e) => {
               e.preventDefault();
-              navigate("/");
+              navigate("/Home");
             }}
-            id=""
             className=" flex flex-col gap-4 mt-6 space-y-2"
           >
             <input
@@ -32,7 +31,6 @@ const Login = () => {
               className=" border-b-2 border-[#b1e5ff] outline-none py-2 text-[#b1e5ff]"
               type="text"
               name=""
-              id=""
               required
             />
             <div className="relative">
@@ -49,10 +47,10 @@ const Login = () => {
                 {showPassword ? <AiOutlineEyeInvisible /> : <AiOutlineEye />}
               </span>
             </div>
-            <div class="flex items-center text-white font-semibold text-sm mt-4">
-              <div class="flex-grow border-t border-blue-300"></div>
-              <span class="mx-3">or Log In with</span>
-              <div class="flex-grow border-t border-blue-300"></div>
+            <div className="flex items-center text-white font-semibold text-sm mt-4">
+              <div className="flex-grow border-t border-blue-300"></div>
+              <span className="mx-3">or Log In with</span>
+              <div className="flex-grow border-t border-blue-300"></div>
             </div>
             <div className=" relative cursor-pointer">
               <button className="bg-[#b1e5ff] rounded-3xl py-2 px-4 font-semibold text-[#123a72] w-full cursor-pointer">
