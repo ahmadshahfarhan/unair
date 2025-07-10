@@ -71,7 +71,7 @@ const SeaTalkMobile = () => {
             Tulungagung Community
           </p>
           <div className="bg-[#1e64ac] max-w-[700px] rounded-2xl p-3 mt-3">
-            <div className="flex items-center space-x-3">
+            <div className="flex  space-x-3">
               <img
                 src="https://i.pravatar.cc/100?img=2"
                 alt="user"
@@ -91,9 +91,13 @@ const SeaTalkMobile = () => {
                   <br />
                   buat tanggal 24 Juli 2025 😘😘
                 </p>
+                <img
+                  src={Chat}
+                  alt="post"
+                  className="w-[300px] items-center mx-auto rounded-xl mt-3"
+                />
               </div>
             </div>
-            <img src={Chat} alt="post" className="w-[300px] rounded-xl mt-3" />
             <div className="flex justify-between items-center text-sm mt-2">
               <div className="flex items-center space-x-4">
                 <span className="flex items-center">
