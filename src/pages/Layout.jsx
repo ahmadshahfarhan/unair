@@ -5,6 +5,7 @@ import Home from "./Home/Home";
 import SeaMart from "./SeaMart/SeaMart";
 import SeaCraft from "./SeaCraft/SeaCraft";
 import SeaExplore from "./SeaExplore/SeaExploe";
+import SeaTalk from "./SeaTalk/SeaTalk";
 
 const Layout = () => {
   return (
@@ -17,6 +18,7 @@ const Layout = () => {
         <Route path="/SeaMart" element={<SeaMart />} />
         <Route path="/SeaCraft" element={<SeaCraft />} />
         <Route path="/SeaExplore" element={<SeaExplore />} />
+        <Route path="/SeaTalk" element={<SeaTalk />} />
       </Routes>
     </div>
   );

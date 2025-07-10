@@ -40,7 +40,7 @@ const Navbar = () => {
                 SeaCraft
               </span>
             </div>
-            <div className="flex flex-col items-center">
+            <div onClick={() => navigate("/seatalk")} className="flex flex-col items-center">
               <div className="bg-[#145184] text-white rounded-full w-16 h-16 flex items-center justify-center">
                 <FaUsers className="text-3xl" />
               </div>
