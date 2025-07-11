@@ -16,6 +16,7 @@ const SeaTalkMobile = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#7ecdf8] to-[#3aa6e3] text-white px-4 pt-4 pb-16 font-sans">
       <div
+      data-aos="fade-down"
         onClick={() => Navigate("/Home")}
         className=" flex items-center mb-4 cursor-pointer"
       >
@@ -25,7 +26,7 @@ const SeaTalkMobile = () => {
         </span>
       </div>
 
-      <div className="flex items-center justify-between mb-3">
+      <div data-aos="fade-down" className="flex items-center justify-between mb-3">
         <div className=" flex items-center gap-3">
           <img
             src="https://i.pravatar.cc/100?img=1"
@@ -43,7 +44,7 @@ const SeaTalkMobile = () => {
         </div>
       </div>
 
-      <div className="flex-col items-center text-sm">
+      <div data-aos="fade-down" className="flex-col items-center text-sm">
         <div className=" flex items-center gap-x-3">
           <button className=" pb-1 border-white font-bold">Home Page</button>
           <button className="pb-1 border-b-2 border-white font-bold">

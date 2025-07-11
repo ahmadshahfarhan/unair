@@ -10,7 +10,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   return (
     <div className="relative w-full bg-white">
-      <div className="bg-gradient-to-r from-blue-500 to-blue-400 h-[160px] w-full rounded-b-4xl md:rounded-b-full">
+      <div data-aos="fade-down" className="bg-gradient-to-r from-blue-500 to-blue-400 h-[160px] w-full rounded-b-4xl md:rounded-b-full">
         <div className="flex items-center bg-white rounded-full  max-w-[700px] mx-4 sm:mx-auto md:mx-auto p-2 px-4 shadow-lg absolute left-0 right-0 top-10">
           <CiSearch className="text-blue-800 text-2xl mr-2" />
           <input
@@ -21,7 +21,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className=" absolute px-4 left-0 right-0 top-28">
+      <div data-aos="zoom-out" className=" absolute px-4 left-0 right-0 top-28">
         <div className="bg-gradient-to-r from-sky-200 to-cyan-400 rounded-2xl p-3 md:p-4 shadow-md w-full md:max-w-[700px] mx-auto">
           <div className="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-3 md:gap-x-16 justify-center">
             <div

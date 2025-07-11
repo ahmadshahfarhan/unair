@@ -10,7 +10,7 @@ const Home = () => {
         <SeaMart />
         <SeaExplore />
         <BottomNavbar />
-      </div>    
+      </div>
     </>
   );
 };

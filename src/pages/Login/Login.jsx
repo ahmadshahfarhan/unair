@@ -9,7 +9,7 @@ const Login = () => {
   return (
     <>
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[#58aafc] via-[#368fde] to-[#1e64ac]">
-        <div className="p-4 px-10">
+        <div data-aos="zoom-in" className="p-4 px-10">
           <span className="text-[#123a72] text-6xl font-bold uppercase">
             hi!
           </span>
