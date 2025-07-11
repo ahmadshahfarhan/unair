@@ -10,7 +10,7 @@ const Navbar = () => {
     <div className="relative w-full bg-white">
       <div data-aos="fade-down" className="bg-gradient-to-r from-blue-500 to-blue-400 h-[200px] lg:h-[160px] w-full rounded-b-4xl md:rounded-b-full">
         <div
-          onClick={() => Navigate("/Home")}
+          onClick={() => Navigate("/")}
           className=" flex items-center ml-4 pt-3 cursor-pointer"
         >
           <FaAngleLeft className="text-white text-xl md:text-3xl cursor-pointer" />

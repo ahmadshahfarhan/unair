@@ -17,7 +17,7 @@ const SeaTalkMobile = () => {
     <div className="min-h-screen bg-gradient-to-b from-[#7ecdf8] to-[#3aa6e3] text-white px-4 pt-4 pb-16 font-sans">
       <div
       data-aos="fade-down"
-        onClick={() => Navigate("/Home")}
+        onClick={() => Navigate("/")}
         className=" flex items-center mb-4 cursor-pointer"
       >
         <FaAngleLeft className="text-white text-xl md:text-3xl cursor-pointer" />
