@@ -26,10 +26,10 @@ const Layout = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Navigate to="/Login" />} />
+        <Route path="/login" element={<Navigate to="/Login" />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Register" element={<Register />} />
-        <Route path="/Home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/SeaMart" element={<SeaMart />} />
         <Route path="/SeaCraft" element={<SeaCraft />} />
         <Route path="/SeaExplore" element={<SeaExplore />} />
