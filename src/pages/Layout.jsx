@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Login from "./Login/Login";
 import Register from "./Register/Register";
@@ -12,24 +12,34 @@ import useAOS from "../Hooks/useAos";
 
 const Layout = () => {
   useAOS();
-  const [isLoading, setIsLoading] = useState(true);
+  const location = useLocation();
+  const [showSplash, setShowSplash] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 3200);
-  }, []);
+    if (location.pathname === "/") {
+      const timer = setTimeout(() => {
+        setShowSplash(false);
+      }, 5000);
+      return () => clearTimeout(timer);
+    } else {
+      setShowSplash(false);
+    }
+  }, [location]);
 
-  if (isLoading) {
+  if (location.pathname === "/" && showSplash) {
     return <SplashScreen />;
+  }
+
+  if (location.pathname === "/" && !showSplash) {
+    return <Navigate to="/Login" replace />;
   }
   return (
     <div>
       <Routes>
-        <Route path="/login" element={<Navigate to="/Login" />} />
+        <Route path="/" element={<Navigate to="/Login" />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Register" element={<Register />} />
-        <Route path="/" element={<Home />} />
+        <Route path="/Home" element={<Home />} />
         <Route path="/SeaMart" element={<SeaMart />} />
         <Route path="/SeaCraft" element={<SeaCraft />} />
         <Route path="/SeaExplore" element={<SeaExplore />} />

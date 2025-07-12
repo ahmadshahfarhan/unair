@@ -5,6 +5,7 @@ import { LuTicketPercent } from "react-icons/lu";
 import { FaShoppingCart } from "react-icons/fa";
 import { MdEmail } from "react-icons/md"
 import { FaUsers } from "react-icons/fa";
+import { FaBookOpen } from "react-icons/fa";
 
 const BottomNavbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -41,8 +42,8 @@ const BottomNavbar = () => {
         </div>
 
         <div className="flex flex-col items-center">
-          <MdEmail className="text-2xl" />
-          <span className="text-xs">Message</span>
+          <FaBookOpen className="text-2xl" />
+          <span className="text-xs">Modul</span>
         </div>
 
         <div className="flex flex-col items-center">

@@ -17,7 +17,7 @@ export default function SeaExplore() {
       className="min-h-screen bg-cover bg-no-repeat bg-center text-white font-sans"
       style={{ backgroundImage: `url(${Background})` }}
     >
-      <div data-aos="fade-down" onClick={() => Navigate("/")} className="bg-[#0179C3] px-4 py-4 rounded-b-3xl flex justify-start items-center cursor-pointer">
+      <div data-aos="fade-down" onClick={() => Navigate("/Home")} className="bg-[#0179C3] px-4 py-4 rounded-b-3xl flex justify-start items-center cursor-pointer">
         <FaAngleLeft className="text-2  xl" />
         <h1 className="text-xl font-bold">SeaExplore</h1>
       </div>
